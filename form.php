@@ -1,14 +1,16 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Teacher Evaluation System - Home</title>
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     />
 
     <!-- jQuery library -->
@@ -19,12 +21,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
 </head>
 
 <body>
 <h1>Επιλογή καθηγητή</h1>
-<form>
+<form >
     <select name="teachers">
         <option value="1">Δημήτριος Δημητριάδης</option>
         <option value="2">Αντώνης Νικολόπουλος</option>
@@ -35,8 +36,8 @@
     <hr>
     <h1>Ερωτηματολόγιο</h1>
     <h><u>Από το 1 μέχρι το 5 επιλέξτε για τον κάθε καθηγητή
-        1->Καθόλου 2->Λίγο 3->Δεν ξέρω δεν απαντώ 4->Αρκετά 5->Πολύ
-    </u></h>
+            1->Καθόλου 2->Λίγο 3->Δεν ξέρω δεν απαντώ 4->Αρκετά 5->Πολύ
+        </u></h>
     </br>
     </br>
 
@@ -188,3 +189,4 @@
 </form>
 </br>
 </div>
+</body>
