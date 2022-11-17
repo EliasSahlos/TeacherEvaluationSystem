@@ -24,15 +24,167 @@
 
 <body>
 <h1>Επιλογή καθηγητή</h1>
-<div class="btn-group">
-    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Επιλογή
-    </button>
-    <div class="dropdown-menu">
-        <a class="dropdown-item" href="questions.html" value="1"> Αναστασίου Χρήστος</a>
-        <a class="dropdown-item " href="questions.html" value="2"> Βουρβουλάκης Ιωάννης </a>
-        <a class="dropdown-item" href="questions.html" value="3"> Καλόμοιρος Ιωάννης</a>
-        <a class="dropdown-item" href="questions.html" value="4"> Παπατσώρης Αναστάσιος</a>
-        <a class="dropdown-item" href="questions.html" value="5"> Πολίτης Αναστάσιος</a>
-    </div>
+<form>
+    <select name="teachers">
+        <option value="1">Δημήτριος Δημητριάδης</option>
+        <option value="2">Αντώνης Νικολόπουλος</option>
+        <option value="3">Ανδρέας Παπαδόπουλος</option>
+        <option value="4">Μαρία Μαχμούντ</option>
+    </select>
+
+    <hr>
+    <h1>Ερωτηματολόγιο</h1>
+    <h><u>Από το 1 μέχρι το 5 επιλέξτε για τον κάθε καθηγητή
+        1->Καθόλου 2->Λίγο 3->Δεν ξέρω δεν απαντώ 4->Αρκετά 5->Πολύ
+    </u></h>
+    </br>
+    </br>
+
+    <p>
+        1) Ο καθηγητής καταφέρνει να διεγείρει το ενδιαφέρον των φοιτητών ως προς το μάθημα που διδάσκει; </br>
+        1:
+        <input type="radio" name="q1" value="1"/>
+        2:
+        <input type="radio" name="q1" value="2"/>
+        3:
+        <input type="radio" name="q1" value="3"/>
+        4:
+        <input type="radio" name="q1" value="4"/>
+        5:
+        <input type="radio" name="q1" value="5"/>
+    </p>
+    </br>
+    <p>
+        2) Είναι ο καθηγητής προσιτός στους φοιτητές εκτός διδακτικών ωρών; </br>
+        1:
+        <input type="radio" name="q2" value="1"/>
+        2:
+        <input type="radio" name="q2" value="2"/>
+        3:
+        <input type="radio" name="q2" value="3"/>
+        4:
+        <input type="radio" name="q2" value="4"/>
+        5:
+        <input type="radio" name="q2" value="5"/>
+    </p>
+    </br>
+    <p>
+        3) Κατέχει ο καθηγητής την ικανότητα της μεταδοτικότητας; </br>
+        1:
+        <input type="radio" name="q3" value="1"/>
+        2:
+        <input type="radio" name="q3" value="2"/>
+        3:
+        <input type="radio" name="q3" value="3"/>
+        4:
+        <input type="radio" name="q3" value="4"/>
+        5:
+        <input type="radio" name="q3" value="5"/>
+    </p>
+    </br>
+    <p>
+        4) Ενθαρρύνει τους φοιτητές να διατυπώνουν απορίες και ερωτήσεις και να για να αναπτύξουν την κρίση τους;
+        </br>
+        1:
+        <input type="radio" name="q4" value="1"/>
+        2:
+        <input type="radio" name="q4" value="2"/>
+        3:
+        <input type="radio" name="q4" value="3"/>
+        4:
+        <input type="radio" name="q4" value="4"/>
+        5:
+        <input type="radio" name="q4" value="5"/>
+    </p>
+    </br>
+    <p>
+        5) Ο καθηγητής βαθμολογεί δίκαια; </br>
+        1:
+        <input type="radio" name="q5" value="1"/>
+        2:
+        <input type="radio" name="q5" value="2"/>
+        3:
+        <input type="radio" name="q5" value="3"/>
+        4:
+        <input type="radio" name="q5" value="4"/>
+        5:
+        <input type="radio" name="q5" value="5"/>
+    </p>
+    </br>
+    <p>
+        6) Ο καθηγητής ωθεί τους φοιτητές να συμμετάσχουν στο μάθημα; </br>
+        1:
+        <input type="radio" name="q6" value="1"/>
+        2:
+        <input type="radio" name="q6" value="2"/>
+        3:
+        <input type="radio" name="q6" value="3"/>
+        4:
+        <input type="radio" name="q6" value="4"/>
+        5:
+        <input type="radio" name="q6" value="5"/>
+    </p>
+    </br>
+
+    <p>
+        7) Ο καθηγητής οργανώνει καλά την ύλη του μαθήματος; </br>
+        1:
+        <input type="radio" name="q7" value="1"/>
+        2:
+        <input type="radio" name="q7" value="2"/>
+        3:
+        <input type="radio" name="q7" value="3"/>
+        4:
+        <input type="radio" name="q7" value="4"/>
+        5:
+        <input type="radio" name="q7" value="5"/>
+    </p>
+    </br>
+    <p>
+        8) Ο καθηγητής ήταν συνεπής στις υποχρεώσεις του/της; </br>
+        1:
+        <input type="radio" name="q8" value="1"/>
+        2:
+        <input type="radio" name="q8" value="2"/>
+        3:
+        <input type="radio" name="q8" value="3"/>
+        4:
+        <input type="radio" name="q8" value="4"/>
+        5:
+        <input type="radio" name="q8" value="5"/>
+    </p>
+    </br>
+    <p>
+        9) Αναλύει και παρουσιάζει τις έννοιες με τρόπο απλό και ενδιαφέροντα χρησιμοποιώντας παραδείγματα; </br>
+        1:
+        <input type="radio" name="q9" value="1"/>
+        2:
+        <input type="radio" name="q9" value="2"/>
+        3:
+        <input type="radio" name="q9" value="3"/>
+        4:
+        <input type="radio" name="q9" value="4"/>
+        5:
+        <input type="radio" name="q9" value="5"/>
+    </p>
+    </br>
+
+    <p>
+        10) Το επίπεδο των γνώσεών του καθηγητή σας ικανοποίησε; </br>
+
+        <input type="radio" name="q10" value="1"/>
+        2:
+        <input type="radio" name="q10" value="2"/>
+        3:
+        <input type="radio" name="q10" value="3"/>
+        4:
+        <input type="radio" name="q10" value="4"/>
+        5:
+        <input type="radio" name="q10" value="5"/>
+    </p>
+    </br>
+    <input type="submit" value="Αποστολή Αξιολόγησης">
+
+</form>
+</br>
 </div>
