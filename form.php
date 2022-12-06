@@ -1,4 +1,14 @@
 <?php
+    require_once "connection.php";
+    $token = $_GET["token"];
+
+    $query = "SELECT first_name,last_name FROM teachers,evaluations WHERE teachers.id = evaluations.teacher_id AND evaluations.token=:given_token";
+    $query_execution = $conn->prepare($query);
+    $query_execution->execute([
+    "given_token" => $token
+    ]);
+    $results = $query_execution->fetchAll();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,17 +34,9 @@
 </head>
 
 <body>
-<h1>Επιλογή καθηγητή</h1>
-<form >
-    <select name="teachers">
-        <option value="1">Δημήτριος Δημητριάδης</option>
-        <option value="2">Αντώνης Νικολόπουλος</option>
-        <option value="3">Ανδρέας Παπαδόπουλος</option>
-        <option value="4">Μαρία Μαχμούντ</option>
-    </select>
-
-    <hr>
+<form action="user_data_save.php?token=<?=$token?>" method="post">
     <h1>Ερωτηματολόγιο</h1>
+    <h6><?=$results[0]["first_name"]?> <?=$results[0]["last_name"]?></h6>
     <h><u>Από το 1 μέχρι το 5 επιλέξτε για τον κάθε καθηγητή
             1->Καθόλου 2->Λίγο 3->Δεν ξέρω δεν απαντώ 4->Αρκετά 5->Πολύ
         </u></h>
@@ -184,8 +186,7 @@
         <input type="radio" name="q10" value="5"/>
     </p>
     </br>
-    <input type="submit" value="Αποστολή Αξιολόγησης">
-
+        <input type="submit" value="Αποστολή Αξιολόγησης">
 </form>
 </br>
 </div>

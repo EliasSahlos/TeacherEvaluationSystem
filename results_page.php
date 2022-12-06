@@ -1,8 +1,4 @@
 <?php
-    session_start();
-    if(!$_SESSION['LOGGED_IN']){
-        header("Location: login.php");
-    }
 ?>
 <!doctype html>
 <html lang="en">
@@ -14,9 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="check_token.php" method="get">
-        <input type="text" name="token"/>
-        <button type="submit">CLICK ME</button>
-    </form>
+    Ευχαριστουμε για την αξιολογηση σας.
+    <a href="index.php">Επιστροφή στην αξιολόγηση</a>
+    <a href="view_results.php">Προβολή Αξιολογήσεων</a>
 </body>
 </html>
