@@ -41,7 +41,7 @@ $results = $query_execution->fetchAll();
                 <td>
                     1) Ο καθηγητής καταφέρνει να διεγείρει το ενδιαφέρον των φοιτητών ως προς το μάθημα που διδάσκει;
                 </td>
-                <td>
+                <td class ="text-center">
                     1:
                     <input type="radio" name="q1" value="1"/>
                     2:
@@ -57,7 +57,7 @@ $results = $query_execution->fetchAll();
                 <td>
                     2) Είναι ο καθηγητής προσιτός στους φοιτητές εκτός διδακτικών ωρών; </br>
                 </td>
-                <td>
+                <td class ="text-center">
                     1:
                     <input type="radio" name="q2" value="1"/>
                     2:
@@ -74,7 +74,7 @@ $results = $query_execution->fetchAll();
                 <td>
                     3) Κατέχει ο καθηγητής την ικανότητα της μεταδοτικότητας; </br>
                 </td>
-                <td>
+                <td class ="text-center">
                     1:
                     <input type="radio" name="q3" value="1"/>
                     2:
@@ -92,8 +92,7 @@ $results = $query_execution->fetchAll();
                     4) Ενθαρρύνει τους φοιτητές να διατυπώνουν απορίες και ερωτήσεις και να για να αναπτύξουν την κρίση
                     τους;
                 </td>
-                <td>
-                    </br>
+                <td class ="text-center">
                     1:
                     <input type="radio" name="q4" value="1"/>
                     2:
@@ -106,12 +105,11 @@ $results = $query_execution->fetchAll();
                     <input type="radio" name="q4" value="5"/>
                 </td>
             </tr>
-            </br>
             <tr>
                 <td>
                     5) Ο καθηγητής βαθμολογεί δίκαια; </br>
                 </td>
-                <td>
+                <td class ="text-center">
                     1:
                     <input type="radio" name="q5" value="1"/>
                     2:
@@ -124,12 +122,11 @@ $results = $query_execution->fetchAll();
                     <input type="radio" name="q5" value="5"/>
                 </td>
             </tr>
-            </br>
             <tr>
                 <td>
                     6) Ο καθηγητής ωθεί τους φοιτητές να συμμετάσχουν στο μάθημα; </br>
                 </td>
-                <td>
+                <td class ="text-center">
                     1:
                     <input type="radio" name="q6" value="1"/>
                     2:
@@ -142,12 +139,11 @@ $results = $query_execution->fetchAll();
                     <input type="radio" name="q6" value="5"/>
                 </td>
             </tr>
-            </br>
             <tr>
                 <td>
                     7) Ο καθηγητής οργανώνει καλά την ύλη του μαθήματος; </br>
                 </td>
-                <td>
+                <td class ="text-center">
                     1:
                     <input type="radio" name="q7" value="1"/>
                     2:
@@ -160,12 +156,11 @@ $results = $query_execution->fetchAll();
                     <input type="radio" name="q7" value="5"/>
                 </td>
             </tr>
-            </br>
             <tr>
                 <td>
-                    8) Ο καθηγητής ήταν συνεπής στις υποχρεώσεις του/της; </br>
+                    8) Ο καθηγητής ήταν συνεπής στις υποχρεώσεις του/της;
                 </td>
-                <td>
+                <td class ="text-center">
                     1:
                     <input type="radio" name="q8" value="1"/>
                     2:
@@ -182,9 +177,9 @@ $results = $query_execution->fetchAll();
             <tr>
                 <td>
                     9) Αναλύει και παρουσιάζει τις έννοιες με τρόπο απλό και ενδιαφέροντα χρησιμοποιώντας
-                    παραδείγματα; </br>
+                    παραδείγματα;
                 </td>
-                <td>
+                <td class ="text-center">
                     1:
                     <input type="radio" name="q9" value="1"/>
                     2:
@@ -195,24 +190,23 @@ $results = $query_execution->fetchAll();
                     <input type="radio" name="q9" value="4"/>
                     5:
                     <input type="radio" name="q9" value="5"/>
-                    </br>
                 </td>
             </tr>
             <tr>
                 <td>
-                    10) Το επίπεδο των γνώσεών του καθηγητή σας ικανοποίησε; </br>
+                    10) Το επίπεδο των γνώσεών του καθηγητή σας ικανοποίησε;
                 </td>
-                <td>
-                    <input type="radio" name="q10" value="1"/>
+                <td class ="text-center">
+                    1:
+                    <input type="radio" name="q9" value="1"/>
                     2:
-                    <input type="radio" name="q10" value="2"/>
+                    <input type="radio" name="q9" value="2"/>
                     3:
-                    <input type="radio" name="q10" value="3"/>
+                    <input type="radio" name="q9" value="3"/>
                     4:
-                    <input type="radio" name="q10" value="4"/>
+                    <input type="radio" name="q9" value="4"/>
                     5:
-                    <input type="radio" name="q10" value="5"/>
-                    </br>
+                    <input type="radio" name="q9" value="5"/>
                 </td>
             </tr>
             </tbody>
