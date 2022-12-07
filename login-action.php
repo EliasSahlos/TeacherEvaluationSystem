@@ -4,6 +4,8 @@ require_once "connection.php";
 
 $username = $_POST["username"];
 $password = $_POST["password"];
+var_dump($username);
+var_dump($password);
 
 $query = "SELECT * FROM users WHERE username=:given_username";
 $query_execution = $conn->prepare($query);
@@ -16,7 +18,9 @@ $results = $query_execution->fetchAll();
 
 if (sizeof($results) != 0) {
     $password_db = $results[0]["password"];
-    if (!password_verify($password, $password_db)) {
+//    if (!password_verify($password, $password_db))
+
+    if($password == $password_db){
         header("Location: login.php?error=1");
         die();
     }
