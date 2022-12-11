@@ -74,7 +74,6 @@ $query2_execution->execute([
     "question_slug" => "q10",
     "answer_value" => $question10
 ]);
-
 $query3 = "UPDATE evaluations SET done_submit=1,user_id=:given_user_id WHERE token=:given_token";
 $query3_execution = $conn->prepare($query3);
 $query3_execution->execute([

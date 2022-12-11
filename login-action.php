@@ -4,8 +4,6 @@ require_once "connection.php";
 
 $username = $_POST["username"];
 $password = $_POST["password"];
-var_dump($username);
-var_dump($password);
 
 $query = "SELECT * FROM users WHERE username=:given_username";
 $query_execution = $conn->prepare($query);

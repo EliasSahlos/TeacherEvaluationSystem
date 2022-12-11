@@ -1,6 +1,6 @@
 <?php
 $hashed_password = password_hash("12345", PASSWORD_DEFAULT);
-var_dump($hashed_password);
+//var_dump($hashed_password);
 ?>
 <!doctype html>
 <html lang="en">
@@ -17,7 +17,24 @@ var_dump($hashed_password);
     <title>Document</title>
 </head>
 <body>
-<section class="vh-100" style="background-color: #508bfc;">
+<section class="vh-100 background-radial-gradient">
+    <style>
+        .background-radial-gradient {
+            background-color: hsl(218, 41%, 15%);
+            background-image: radial-gradient(650px circle at 0% 0%,
+            hsl(218, 41%, 35%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
+                    hsl(218, 41%, 45%) 15%,
+                    hsl(218, 41%, 30%) 35%,
+                    hsl(218, 41%, 20%) 75%,
+                    hsl(218, 41%, 19%) 80%,
+                    transparent 100%);
+        }
+    </style>
     <div class="container py-5 h-100">
         <form action="login-action.php" method="post">
             <div class="row d-flex justify-content-center align-items-center h-100">

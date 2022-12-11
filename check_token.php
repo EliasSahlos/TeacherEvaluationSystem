@@ -13,5 +13,5 @@ if (sizeof($results) != 0) {
     header("Location: form.php?token=".$token);
     die();
 }
-header("Location: index.php");
+header("Location: index.php?error=1");
 die();
