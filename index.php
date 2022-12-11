@@ -45,7 +45,7 @@ if (!$_SESSION['LOGGED_IN']) {
                         <?php
                         if ($_GET["error"] == 1) {
                             ?>
-                            HTML HERE
+                                HTML HERE
                             <?php
                         }
                         ?>

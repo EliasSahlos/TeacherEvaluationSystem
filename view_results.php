@@ -29,7 +29,7 @@ $results = $query_execution->fetchAll();
     <?php
         foreach ($results as $result){
             echo "<tr>";
-            echo "<td>".$result["first_name"]." ". $result["last_name"]." ". $result["MO"] ."</td>";
+            echo "<td>".$result["first_name"]." ". $result["last_name"]." ". number_format($result["MO"],2) ."</td>";
             echo "</tr>";
         }
     ?>
