@@ -65,9 +65,3 @@ if (!$_SESSION['LOGGED_IN']) {
 </section>
 </body>
 </html>
-
-
-<!--<form action="check_token.php" method="get">-->
-<!--    <input type="text" name="token"/>-->
-<!--    <button type="submit">CLICK ME</button>-->
-<!--</form>-->

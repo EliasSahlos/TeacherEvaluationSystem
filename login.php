@@ -42,6 +42,13 @@ $hashed_password = password_hash("12345", PASSWORD_DEFAULT);
                     <div class="card shadow-2-strong" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
                             <h3 class="mb-5">Σύνδεση Λογαριασμού</h3>
+                            <?php
+                            if ($_GET["error"] == 1) {
+                                ?>
+                                HTML HERE
+                                <?php
+                            }
+                            ?>
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="typeEmailX-2">Username</label>
                                 <input type="text" id="typeEmailX-2" name="username"

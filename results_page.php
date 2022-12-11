@@ -33,11 +33,11 @@
             <table class="table text-center">
                 <tr>
                     <td>
-                        <a href="index.php">Προβολή Αξιολογήσεων</a>
+                        <a href="view_results.php">Προβολή Αξιολόγήσεων</a>
                     </td>
-
-
-                    <td><a href="view_results.php">Νεα Αξιολόγηση</a></td>
+                    <td>
+                        <a href="index.php">Νέα Αξιολόγηση</a>
+                    </td>
                 </tr>
             </table>
         </tr>
