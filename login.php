@@ -36,7 +36,7 @@ $hashed_password = password_hash("12345", PASSWORD_DEFAULT);
         }
     </style>
     <div class="container py-5 h-100">
-        <form action="login-action.php" method="post">
+        <form action="check_login.php" method="post">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                     <div class="card shadow-2-strong" style="border-radius: 1rem;">
@@ -45,7 +45,9 @@ $hashed_password = password_hash("12345", PASSWORD_DEFAULT);
                             <?php
                             if ($_GET["error"] == 1) {
                                 ?>
-                                HTML HERE
+                                <div class="alert alert-danger">
+                                    <strong>Λάθος Στοιχεία Σύνδεσης</strong><br> Παρακαλούμε εισάγετε τα στοιχεία σας ξανα
+                                </div>
                                 <?php
                             }
                             ?>

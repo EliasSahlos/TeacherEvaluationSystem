@@ -42,20 +42,25 @@ if (!$_SESSION['LOGGED_IN']) {
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                     <div class="card shadow-2-strong" style="border-radius: 1rem;">
-                        <?php
-                        if ($_GET["error"] == 1) {
-                            ?>
-                                HTML HERE
-                            <?php
-                        }
-                        ?>
                         <div class="card-body p-5 text-center">
                             <h4 class="mb-5">Εισαγωγή Token</h4>
-                            <label class="form-label" for="typeEmailX-2">Token</label>
+                            <?php
+                            if ($_GET["error"] == 1) {
+                                ?>
+                                <div class="alert alert-danger">
+                                    <strong>Μη εγκυρο Token</strong><br> Παρακαλούμε πληκτρολογήστε το ξανά
+                                </div>
+                                <?php
+                            }
+                            ?>
                             <input type="text" id="typeEmailX-2" name="token"
                                    class="form-control form-control-lg"/>
                             <br>
                             <button class="btn btn-primary btn-lg btn-block" type="submit">Καταχώρηση Token</button>
+                            <br><br>
+                            <a href="view_results.php">
+                                <button class="btn btn-primary btn-lg btn-block" type="button">Προβολή Αξιολογήσεων Χρήστη</button>
+                            </a>
                         </div>
                     </div>
                 </div>

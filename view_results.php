@@ -7,7 +7,8 @@ $query = "SELECT teachers.first_name,teachers.last_name,AVG(answers.answer_value
           FROM evaluations
           JOIN teachers ON teacher_id = teachers.id 
           JOIN answers ON answers.evaluation_id = evaluations.id
-          WHERE user_id=:given_user_id";
+          WHERE user_id=:given_user_id
+          GROUP BY evaluations.id";
 $query_execution = $conn->prepare($query);
 $query_execution->execute([
     "given_user_id" => $user_id

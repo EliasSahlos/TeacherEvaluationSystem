@@ -81,4 +81,4 @@ $query3_execution->execute([
     "given_user_id" => intval($user_id)
 ]);
 
-header("Location: results_page.php");
+header("Location: after-evaluation.php");

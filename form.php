@@ -35,7 +35,7 @@ $results = $query_execution->fetchAll();
         <strong>Οδηγίες</strong> Επιλέξτε για κάθε καθηγητή μια απο τις διαθέσιμες επιλογές : 1)Καθόλου &nbsp 2)Λίγο &nbsp 3)Μέτρια &nbsp
         4)Αρκετά &nbsp 5)Πολύ
     </div>
-    <form action="user_data_save.php?token=<?= $token ?>" method="post">
+    <form action="evaluation_data_save.php?token=<?= $token ?>" method="post">
         <table class="table table-striped table-bordered table-hover">
             <tbody>
             <tr>
